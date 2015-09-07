@@ -1,0 +1,20 @@
+#!/bin/sh
+yt="https://www.youtube.com/watch?v="
+prev="$init"
+echo "$(<asciiart)"
+mkdir -p ~/.yda
+while [ 1 ]
+	do
+	url="$(xsel -b)"
+	echo $url > ~/.yda/'ytube'.txt
+	sleep 1
+	if [[ $url == *"$yt"* ]]
+		then
+			if [[ $prev != $url ]]
+				then
+					echo "Starting Download Now!"
+					nohup xterm -hold -e "sh ydagent.sh" &> /dev/null & disown
+					prev="$url"
+			fi
+	fi
+done
