@@ -12,7 +12,7 @@ dependencies :
     xsel
     xterm
     youtube-dl
-
+#run script dep by typing ./dep to install all missing dependencies
 
 How to run :
 
