@@ -3,7 +3,7 @@
 download youtube just by copying the links.. nothing else :)
 
 copy the given files in home
-run this in terminl
+run this in terminal
 	sh yda
 thats it :)
 It will automatically grab the youtube video :)
